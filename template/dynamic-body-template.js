@@ -1103,7 +1103,7 @@ var customConfigBody = {};
             //     customConfigBody.setSessionStorage("accountUUID", element.UUID);
             // } else {}
             if(customConfigBody.getSessionStorage("accountUUID") && customConfigBody.getSessionStorage("accountUUID") != ''  && element.UUID == customConfigBody.getSessionStorage("accountUUID")){
-                accountUUID = element.uuid
+                accountUUID = element.UUID
                 accountName = element.Name
             }
         });
