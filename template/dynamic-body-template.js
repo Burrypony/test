@@ -1062,7 +1062,7 @@ var customConfigBody = {};
             responseCallback: 'customConfigBody.setAccountInternalID'
         };
         pepperi.api.accounts.search(bridgeObject);
-        (customConfigBody.accountUUID);
+        this.getTransactionStatus(this.accountUUID);
         document.getElementById("account-name").innerHTML = name
     }
     customConfigBody.buildAccountsDropDown = function (thisAccounts) {
