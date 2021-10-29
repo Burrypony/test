@@ -250,9 +250,9 @@ var customConfigBody = {};
         var self = this;
         var el;
 
-        if(data.objects){
+        if (data.objects) {
             el = data.objects
-        }else{
+        } else {
             el = data
         }
 
@@ -584,8 +584,8 @@ var customConfigBody = {};
         var uuidLast = customConfigBody.getSessionStorage("LastOpenTransactionUUID");
         var total = (grandTotal) ?
             Number(grandTotal)
-                .toFixed(2)
-                .toString() :
+            .toFixed(2)
+            .toString() :
             '0.00';
 
         if (uuidLast == uuid) {
@@ -923,7 +923,6 @@ var customConfigBody = {};
         } else {
             document.getElementById("transactionTotal1").onclick = ''
             document.getElementById("transactionTotal1").style.background = "rgba(10, 10, 10, 0.08)"
-            document.getElementById('CurrCart').style.display = 'none'
             document.getElementById("curTotal").innerHTML = '$0.00'
             document.getElementById("curCatalog").innerHTML = ''
             document.getElementById("curFecha").innerHTML = ''
@@ -1020,7 +1019,7 @@ var customConfigBody = {};
     }
 
     customConfigBody.getAccounts = function () {
-        console.log("callbackName ->>>>",);
+        console.log("callbackName ->>>>", );
         var bridgeObject = {
             fields: ["Name", "UUID", "ExternalID"],
             filter: {
@@ -1056,10 +1055,9 @@ var customConfigBody = {};
         var bridgeObject = {
             fields: ["Name", "InternalID", "UUID", "TSACreditlimit", "TSATotalDebtAging", "TSASalesRepPhone", "TSASalesRepName", "TSASalesRepEmail"],
             filter: {
-                    ApiName: "UUID",
-                    Operation: "IsEqual",
-                    Values: [uuid],
-                
+                ApiName: "UUID",
+                Operation: "IsEqual",
+                Values: [uuid],
             },
             responseCallback: 'customConfigBody.setAccountInternalID'
         };
@@ -1084,11 +1082,11 @@ var customConfigBody = {};
                 <p role="label" id="selected-account">Select a store</p>
                 <ul class="dropdown-content-fit" id="select-menu" role="select">`
 
-        let accountUUID ='';
-        let accountName ='';
+        let accountUUID = '';
+        let accountName = '';
 
         accounts.forEach((element) => {
-            
+
             html += `<li onclick="customConfigBody.setActiveDropdown('${element.UUID}','${element.Name}(${element.ExternalID})'); customConfigBody.findTransactionForSelectedAccount('${element.UUID}')" id="${element.UUID}">${element.Name}(${element.ExternalID})</li>`;
 
             // if ((customConfigBody.getSessionStorage("accountUUID") && customConfigBody.getSessionStorage("accountUUID") != '' && element.UUID == customConfigBody.getSessionStorage("accountUUID"))) {
@@ -1106,7 +1104,7 @@ var customConfigBody = {};
             //     ddElement.innerHTML = html;
             //     customConfigBody.setSessionStorage("accountUUID", element.UUID);
             // } else {}
-            if(customConfigBody.getSessionStorage("accountUUID") && customConfigBody.getSessionStorage("accountUUID") != ''  && element.UUID == customConfigBody.getSessionStorage("accountUUID")){
+            if (customConfigBody.getSessionStorage("accountUUID") && customConfigBody.getSessionStorage("accountUUID") != '' && element.UUID == customConfigBody.getSessionStorage("accountUUID")) {
                 accountUUID = element.UUID
                 accountName = element.Name
             }
@@ -1121,13 +1119,13 @@ var customConfigBody = {};
         </div>`
         ddElement.innerHTML = html;
 
-        if(accountName != '' && accountUUID != ''){
+        if (accountName != '' && accountUUID != '') {
             customConfigBody.setActiveDropdown(accountUUID, accountName)
         }
 
         if (!customConfigBody.getSessionStorage("accountUUID") || customConfigBody.getSessionStorage("accountUUID") == '')
             customConfigBody.setActiveDropdown(customConfigBody.accounts[0].UUID, customConfigBody.accounts[0].Name)
-            
+
     };
 
     customConfigBody.openStoreSelect = function () {
