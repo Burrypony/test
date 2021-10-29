@@ -925,9 +925,8 @@ var customConfigBody = {};
             document.getElementById("transactionTotal1").style.background = "rgba(10, 10, 10, 0.08)"
             document.getElementById('CurrCart').style.display = 'none'
             document.getElementById("curTotal").innerHTML = '$0.00'
-            document.getElementById("curCatalog").innerHTML = catalog == 'Bebidas y Provisiones' ? 'Bebidas' : 'Refrigerados'
+            document.getElementById("curCatalog").innerHTML = ''
             document.getElementById("curFecha").innerHTML = ''
-        }
             //document.getElementById('CurrCart').style.display='none';
             this.dateOfLastTransaction = ''
             sessionStorage.removeItem(StorageName);
