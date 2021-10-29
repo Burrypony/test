@@ -1,0 +1,247 @@
+{
+  "Header": [
+    {
+      "ID": "General Info",
+      "Name": "General Info",
+      "Table": false,
+      "Fields": [
+        {
+          "ID": "Logo URL",
+          "Title": "Logo URL",
+          "Type": "image"
+        },
+        {
+          "ID": "Favicon URL",
+          "Title": "Favicon URL",
+          "Type": "image"
+        },
+        {
+          "ID": "Tab Title",
+          "Title": "Tab Title",
+          "Type": "text"
+        },
+        {
+          "ID": "Main Transaction",
+          "Title": "Main Transaction",
+          "Type": "text"
+        },
+        {
+          "ID": "Main Catalog",
+          "Title": "Main Catalog",
+          "Type": "text"
+        }
+      ]
+    },
+    {
+      "ID": "Right Menu",
+      "Name": "Right Menu",
+      "Table": true,
+      "Fields": [
+        {
+          "ID": "actionType",
+          "Title": "actionType",
+          "Type": "text"
+        },
+        {
+          "ID": "activityName",
+          "Title": "activityName",
+          "Type": "text"
+        },
+        {
+          "ID": "title",
+          "Title": "title",
+          "Type": "text"
+        },
+        {
+          "ID": "deepLink",
+          "Title": "deepLink",
+          "Type": "text"
+        }
+      ]
+    },
+    {
+      "ID": "DropdownList",
+      "Name": "DropdownList",
+      "Table": true,
+      "Fields": [
+        {
+          "ID": "actionType",
+          "Title": "actionType",
+          "Type": "text"
+        },
+        {
+          "ID": "parentLink",
+          "Title": "parentLink",
+          "Type": "text"
+        },
+        {
+          "ID": "title",
+          "Title": "title",
+          "Type": "text"
+        },
+        {
+          "ID": "deepLink",
+          "Title": "deepLink",
+          "Type": "text"
+        }
+      ]
+    }
+  ],
+  "Body": [
+    {
+      "ID": "General Info",
+      "Name": "General Info",
+      "Table": false,
+      "Fields": [
+        {
+          "ID": "Catalog",
+          "Title": "Catalog",
+          "Type": "text"
+        }
+      ]
+    },
+    {
+      "ID": "Catalogs Settings",
+      "Name": "Catalogs Settings",
+      "Table": true,
+      "Fields": [
+        {
+          "ID": "Transaction Type",
+          "Title": "Transaction Type",
+          "Type": "text"
+        },
+        {
+          "ID": "Catalog",
+          "Title": "Catalog",
+          "Type": "text"
+        },
+        {
+          "ID": "SSelement",
+          "Title": "SSelement",
+          "Type": "text"
+        },
+        {
+          "ID": "catalogUUID",
+          "Title": "catalogUUID",
+          "Type": "text"
+        }
+      ]
+    },
+    {
+      "ID": "BigLinks",
+      "Name": "Catalog Links",
+      "Table": true,
+      "Fields": [
+        {
+          "ID": "actionType",
+          "Title": "actionType",
+          "Type": "text"
+        },
+        {
+          "ID": "title",
+          "Title": "title",
+          "Type": "text"
+        },
+        {
+          "ID": "deepLink",
+          "Title": "deepLink",
+          "Type": "text"
+        },
+        {
+          "ID": "transactionName",
+          "Title": "transactionName",
+          "Type": "text"
+        },
+        {
+          "ID": "catalogUUID",
+          "Title": "catalogUUID",
+          "Type": "text"
+        },
+        {
+          "ID": "currentCatalog",
+          "Title": "currentCatalog",
+          "Type": "text"
+        },
+        {
+          "ID": "img",
+          "Title": "img",
+          "Type": "image"
+        }
+      ]
+    },
+    {
+      "ID": "SmallLinks",
+      "Name": "SmallLinks",
+      "Table": true,
+      "Fields": [
+        {
+          "ID": "actionType",
+          "Title": "actionType",
+          "Type": "text"
+        },
+        {
+          "ID": "title",
+          "Title": "title",
+          "Type": "text"
+        },
+        {
+          "ID": "deepLink",
+          "Title": "deepLink",
+          "Type": "text"
+        },
+        {
+          "ID": "transactionName",
+          "Title": "transactionName",
+          "Type": "text"
+        },
+        {
+          "ID": "catalogUUID",
+          "Title": "catalogUUID",
+          "Type": "text"
+        },
+        {
+          "ID": "currentCatalog",
+          "Title": "currentCatalog",
+          "Type": "text"
+        },
+        {
+          "ID": "img",
+          "Title": "img",
+          "Type": "image"
+        }
+      ]
+    },
+    {
+      "ID": "CaruselData",
+      "Name": "CaruselData",
+      "Table": true,
+      "Fields": [
+        {
+          "ID": "title",
+          "Title": "title",
+          "Type": "text"
+        },
+        {
+          "ID": "description",
+          "Title": "description",
+          "Type": "text"
+        },
+        {
+          "ID": "button",
+          "Title": "button",
+          "Type": "text"
+        },
+        {
+          "ID": "deepLink",
+          "Title": "deepLink",
+          "Type": "text"
+        },
+        {
+          "ID": "imageURL",
+          "Title": "imageURL",
+          "Type": "image"
+        }
+      ]
+    }
+  ]
+}

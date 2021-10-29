@@ -1,0 +1,57 @@
+{
+    "GeneralInfo": {
+        "LogoURL": "https://storage.pepperi.com/CustomersData/VSuarez/VSuarez_Logo.png",
+        "FaviconURL": "https://storage.pepperi.com/CustomersData/VSuarez/favicon.ico",
+        "TabTitle": "VSuarez",
+        "MainTransaction": "Sales Order",
+        "MainCatalog": "ALL"
+    },
+    "RightMenu": [
+        {
+            "title": "Mis Órdenes",
+            "actionType": "dropdown"
+        },
+        {
+            "actionType": "activity",
+            "title": "Cuentas Por Pagar",
+            "activityName": "Payment",
+            "deepLink": "activities/details/{{UUID}}"
+        },
+        {
+            "title": "Mis Facturas",
+            "actionType": "navigation",
+            "deepLink": "/list/all_activities?listTabName=%5BGL%236c9bbee2-f9fe-46a1-9678-946fdfeba23c%5DListView&listView=1&ListTitle=Facturas&TopPadding=0"
+        },
+        {
+            "actionType": "activity",
+            "activityName": "Contact Us",
+            "title": "Contáctenos",
+            "deepLink": "activities/details/{{UUID}}"
+        },
+        {
+            "actionType": "openInNewTab",
+            "activityName": "",
+            "title": "¿Preguntas?",
+            "deepLink": "https://www.google.com"
+        },
+        {
+            "actionType": "openInNewTab",
+            "title": "Nosotros",
+            "deepLink": "https://www.vsuarez.com/"
+        }
+    ],
+    "DropdownList": [
+        {
+            "actionType": "navigation",
+            "title": "Órdenes Abiertas",
+            "deepLink": "list/all_activities?listTabName=%5BGL%23d1e6b346-10b3-42fb-815a-402422e4a00b%5DListView&listView=1&ListTitle=%C3%93rdenes%20Abiertas&TopPadding=0",
+            "parentLink": "Mis Órdenes"
+        },
+        {
+            "actionType": "navigation",
+            "title": "Historial de órdenes",
+            "deepLink": "list/all_activities?listTabName=%5BGL%23fc22de3d-f63c-441f-82fb-6e481c97ab53%5DListView&listView=1&ListTitle=All%20Sales%20Transactions&TopPadding=0",
+            "parentLink": "Mis Órdenes"
+        }
+    ]
+}
