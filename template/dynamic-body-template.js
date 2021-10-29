@@ -926,6 +926,7 @@ var customConfigBody = {};
             document.getElementById("curTotal").innerHTML = '$0.00'
             document.getElementById("curCatalog").innerHTML = ''
             document.getElementById("curFecha").innerHTML = ''
+            document.getElementById('qty1').style.display = 'none';
             //document.getElementById('CurrCart').style.display='none';
             this.dateOfLastTransaction = ''
             sessionStorage.removeItem(StorageName);
