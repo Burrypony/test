@@ -30,7 +30,7 @@
 }
 
 #header-section .left-mobile {
-    height: 40px;
+    /* height: 40px; */
     color: #fff;
     display: flex;
     margin-right: 7px;
@@ -46,7 +46,8 @@
 #header-section .chp_btn-group ul li {
     display: inline;
     padding-top: 5px;
-    padding-left: 15px;
+    /* padding-left: 15px; */
+    padding-left: 5px;
     padding-right: 5px;
     border-radius: 4px;
     height: 40px;
@@ -101,7 +102,7 @@
     font-size: 14px;
     height: 100%;
     letter-spacing: 0.12px;
-    line-height: 28px;
+    /* line-height: 28px; */
     border: none;
     transform: scale(1, 0.9);
     display: inline;
@@ -331,11 +332,6 @@
 @media (max-width: 1000px) {
 
 
-
-
-
-
-
     .chp_padding_top {
         padding-top: 0 !important;
     }
@@ -432,8 +428,8 @@
         height: 20%;
     }
 
-    #header-section .chp_left-mobile {
-        height: 40px;
+    #header-section .left-mobile {
+        /* height: 40px; */
 
         color: #fff;
         display: flex;
