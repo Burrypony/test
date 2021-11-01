@@ -1486,7 +1486,6 @@ input[type='radio']:checked:after {
     font-size: 0.87rem;
     position: relative;
     overflow: hidden;
-    padding: 0.5rem;
     padding-left: 0.5rem;
   }
   
