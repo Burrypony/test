@@ -539,6 +539,8 @@ var customConfigHeader = {};
             file.type = "text/css"
             file.href = 'https://burrypony.github.io/test/header/header.css';
 
+            document.getElementsByTagName("head")[0].appendChild(file)
+
             file.onload = function () {
                 uploadedFiles++;
                 if (uploadedFiles == filePaths.length) {
