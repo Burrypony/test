@@ -46,8 +46,7 @@
 #header-section .chp_btn-group ul li {
     display: inline;
     padding-top: 5px;
-    /* padding-left: 15px; */
-    padding-left: 5px;
+    padding-left: 15px;
     padding-right: 5px;
     border-radius: 4px;
     /* height: 40px; */

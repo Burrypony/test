@@ -98,7 +98,7 @@ var customConfigHeader = {};
                   position: inherit;"
                         src="https://storage.pepperi.com/CustomersData/VSuarez/VSuarez_Logo.png" />
 
-                  <p id="account-name" style="margin: 0;padding-left:1em; font-weight: bold;font-size:15px;"></p>
+                  <p id="account-name" style="margin: 0;padding-left:1em; font-weight: bold;font-size:16px;"></p>
                 </div>
                 <div style="display:flex;align-items:center; width:45em">
                       
@@ -149,6 +149,8 @@ var customConfigHeader = {};
                         </div>
         
                     </div>
+
+                    
                     <div class="d-flex justify-content-right">
                         <div id="right_additional_menu">
                             <div class="chp_dropdown">
@@ -168,10 +170,7 @@ var customConfigHeader = {};
                                         <li class="chp_icon-log" onclick="customConfigHeader.logout();">Logout</li>
                                     </ul>
                                 </div>
-                            </div>
-
-
-                           
+                            </div>                
                         </div>
                     </div>
         
