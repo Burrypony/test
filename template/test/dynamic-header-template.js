@@ -110,6 +110,7 @@ var customConfigHeader = {};
                             border-radius: 4px;
                             width: 40px;
                             height: 40px;
+                            display: none;
                             padding-bottom: 4px;"
                             class="chp_dropdown" type="button" id="dropdownMenuButtonMobile" onclick="customConfigHeader.closeHumanMenu()" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
