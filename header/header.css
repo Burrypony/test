@@ -30,7 +30,7 @@
 }
 
 #header-section .left-mobile {
-    /* height: 40px; */
+    height: 40px;
     color: #fff;
     display: flex;
     margin-right: 7px;
