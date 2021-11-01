@@ -101,8 +101,7 @@ var customConfigHeader = {};
                   <p id="account-name" style="margin: 0;padding-left:1em; font-weight: bold;font-size:14px;"></p>
                 </div>
                 <div style="display:flex;align-items:center; width:45em">
-                // class="d-flex justify-content-left"
-        
+                      
                     <div class="left-mobile"
                         <div class="chp_dropdown chp_showMobile">
                             <button style="background-color: transparent;
@@ -183,6 +182,7 @@ var customConfigHeader = {};
         `;
 
         document.getElementById('custom_header_id').innerHTML = str;
+         // class="d-flex justify-content-left"
     };
 
     this.openInNewTab = function (url) {
