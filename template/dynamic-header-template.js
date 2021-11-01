@@ -100,7 +100,7 @@ var customConfigHeader = {};
 
                   <p id="account-name" style="margin: 0;padding-left:1em; font-weight: bold;font-size:16px;"></p>
                 </div>
-                <div class="d-flex justify-content-left">
+                <div class="d-flex .chp_justify-content-left">
                       
                     <div class="left-mobile">
                         <div class="chp_dropdown chp_showMobile">

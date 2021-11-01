@@ -327,6 +327,10 @@
     padding-top: 10px !important;
 }
 
+.chp_show {
+    display: block !important;
+}
+
 
 @media (max-width: 1000px) {
 
