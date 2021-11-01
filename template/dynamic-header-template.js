@@ -100,11 +100,11 @@ var customConfigHeader = {};
 
                   <p id="account-name" style="margin: 0;padding-left:1em; font-weight: bold;font-size:14px;"></p>
                 </div>
-                <div class="chp_d-flex chp_ustify-content-left">
+                <div class="d-flex chp_justify-content-left">
                 
         
-                    <div class="chp_left-mob
-                        <div class="chp_dropdown ile">chp_showMobile ">
+                    <div class="chp_left-mobile"
+                        <div class="chp_dropdown chp_showMobile">
                             <button style="background-color: transparent;
                             border: 0px;
                             border-radius: 4px;
@@ -119,7 +119,7 @@ var customConfigHeader = {};
                             </button>
         
                             <div id="dropdown-menu-mobile" class="chp_dropdown-menu-mobile chp_dropdown-menu-left"
-                                aria-labelledby="chp_dropdownMenuButton">
+                                aria-labelledby="dropdownMenuButton">
         
                                 <div id="test-drpd" style="color: black;
                                 vertical-align: middle;
@@ -149,7 +149,7 @@ var customConfigHeader = {};
                         </div>
         
                     </div>
-                    <div class="chp_d-flex chp_justify-content-right">
+                    <div class="d-flex chp_justify-content-right">
                         <div id="right_additional_menu">
                             <div class="chp_dropdown">
                                 <button onclick="customConfigHeader.closeHamburgerMenu()" class="chp_right-buttons img-pos"  id="user-drop">
@@ -160,7 +160,7 @@ var customConfigHeader = {};
                                     </svg>
                                   
                                 </button>
-                                <div id="myDropdown" class="chp_dropdown-content dropdown-put" style="right:0">
+                                <div id="myDropdown" class="chp_dropdown-content chp_dropdown-put" style="right:0">
                                     <ul>
                                     <li id='userName1'></li>
                                     <hr style="margin-top: 10px; margin-bottom: 10px;">

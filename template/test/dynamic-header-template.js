@@ -104,7 +104,7 @@ var customConfigHeader = {};
                 
         
                     <div class="chp_left-mobile">
-                        <div class="chp_dropdown chp_showMobile ">
+                        <div class="chp_dropdown chp_showMobile">
                             <button style="background-color: transparent;
                             border: 0px;
                             border-radius: 4px;
@@ -119,7 +119,7 @@ var customConfigHeader = {};
                             </button>
         
                             <div id="dropdown-menu-mobile" class="chp_dropdown-menu-mobile chp_dropdown-menu-left"
-                                aria-labelledby="chp_dropdownMenuButton">
+                                aria-labelledby="dropdownMenuButton">
         
                                 <div id="test-drpd" style="color: black;
                                 vertical-align: middle;
