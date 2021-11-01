@@ -83,7 +83,7 @@ var customConfigHeader = {};
             `<header id="header-section">
             <div class="chp_container-fluid">
         
-                <div style="display:flex;align-items:center; width:45em">
+                <div style="display:flex;align-items:center; width:25em">
                     <img class="chp_logo" onclick="customConfigHeader.navigation(\'HomePage\')" style="
                   
                   width: 128px;
