@@ -444,8 +444,6 @@
 
 
     #header-section .chp_dropdown-menu-left {
-
-        margin-top: 14px;
         font-size: 25px;
         width: fit-content;
         background-color: rgb(41, 41, 41, -2.5);
@@ -486,6 +484,7 @@
 
     .chp_showMobile {
         display: block;
+        position: relative;
     }
 
     #dropdownMenuButton:hover #test-drpd {
@@ -555,10 +554,8 @@ svg {
 }
 
 .chp_dropdown-menu-mobile {
-    /* position: absolute; */
-    position: relative;
-    top: 100%;
-    left: 110px;
+    position: absolute;
+    right: 0;
     z-index: 1000;
     display: none;
     float: left;
