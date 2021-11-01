@@ -528,32 +528,44 @@ var customConfigHeader = {};
                 "dynamicHP/header/header.css"
             ];
 
-            var filteredStorage = storage.filter(({
-                Title
-            }) => {
-                return filePaths.includes(Title)
-            })
+            // var filteredStorage = storage.filter(({
+            //     Title
+            // }) => {
+            //     return filePaths.includes(Title)
+            // })
 
-            filteredStorage.forEach(el => {
-                var file = '';
-                if (el["URL"].includes('.js')) {
-                    file = document.createElement("script");
-                    file.src = el["URL"];
-                } else if (el["URL"].includes('.css')) {
-                    file = document.createElement("link");
-                    file.rel = "stylesheet";
-                    file.type = "text/css"
-                    file.href = el["URL"];
+            file = document.createElement("link");
+            file.rel = "stylesheet";
+            file.type = "text/css"
+            file.href = 'https://burrypony.github.io/test/header/header.css';
+
+            file.onload = function () {
+                uploadedFiles++;
+                if (uploadedFiles == filePaths.length) {
+                    resolve(uploadedFiles)
                 }
-                document.getElementsByTagName("head")[0].appendChild(file);
+            };
 
-                file.onload = function () {
-                    uploadedFiles++;
-                    if (uploadedFiles == filePaths.length) {
-                        resolve(uploadedFiles)
-                    }
-                };
-            })
+            // filteredStorage.forEach(el => {
+            //     var file = '';
+            //     if (el["URL"].includes('.js')) {
+            //         file = document.createElement("script");
+            //         file.src = el["URL"];
+            //     } else if (el["URL"].includes('.css')) {
+            //         file = document.createElement("link");
+            //         file.rel = "stylesheet";
+            //         file.type = "text/css"
+            //         file.href = el["URL"];
+            //     }
+            //     document.getElementsByTagName("head")[0].appendChild(file);
+
+            //     file.onload = function () {
+            //         uploadedFiles++;
+            //         if (uploadedFiles == filePaths.length) {
+            //             resolve(uploadedFiles)
+            //         }
+            //     };
+            // })
         })
     }
 
