@@ -349,7 +349,7 @@
     }
 
     .chp_show {
-        display: block;
+        display: block !important;
     }
 
 
