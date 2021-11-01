@@ -100,10 +100,10 @@ var customConfigHeader = {};
 
                   <p id="account-name" style="margin: 0;padding-left:1em; font-weight: bold;font-size:14px;"></p>
                 </div>
-                <div class="chp_d-flex chp_ustify-content-left">
+                <div class="d-flex chp_justify-content-left">
                 
         
-                    <div class="chp_left-mobile">
+                    <div class="chp_left-mobile"
                         <div class="chp_dropdown chp_showMobile">
                             <button style="background-color: transparent;
                             border: 0px;
@@ -149,7 +149,7 @@ var customConfigHeader = {};
                         </div>
         
                     </div>
-                    <div class="chp_d-flex chp_justify-content-right">
+                    <div class="d-flex chp_justify-content-right">
                         <div id="right_additional_menu">
                             <div class="chp_dropdown">
                                 <button onclick="customConfigHeader.closeHamburgerMenu()" class="chp_right-buttons img-pos"  id="user-drop">
@@ -160,7 +160,7 @@ var customConfigHeader = {};
                                     </svg>
                                   
                                 </button>
-                                <div id="myDropdown" class="chp_dropdown-content dropdown-put" style="right:0">
+                                <div id="myDropdown" class="chp_dropdown-content chp_dropdown-put" style="right:0">
                                     <ul>
                                     <li id='userName1'></li>
                                     <hr style="margin-top: 10px; margin-bottom: 10px;">
@@ -426,10 +426,10 @@ var customConfigHeader = {};
     }
 
     this.closeHamburgerMenu = function () {
-        document.getElementById("dropdown-menu-mobile").classList.remove('show')
+        document.getElementById("dropdown-menu-mobile").classList.remove('chp_show')
     }
     this.closeHumanMenu = function () {
-        document.getElementById("dropdown-menu-mobile").classList.toggle('show')
+        document.getElementById("dropdown-menu-mobile").classList.toggle('chp_show')
     }
 
 
@@ -516,7 +516,7 @@ var customConfigHeader = {};
 
     customConfigHeader.openMobDropdown = function (data) {
         console.log(data.children[0]);
-        data.children[0].classList.toggle('show')
+        data.children[0].classList.toggle('chp_show')
     }
 
 
