@@ -100,7 +100,7 @@ var customConfigHeader = {};
 
                   <p id="account-name" style="margin: 0;padding-left:1em; font-weight: bold;font-size:14px;"></p>
                 </div>
-                <div class="d-flex chp_justify-content-left">
+                <div class="d-flex justify-content-left">
                 
         
                     <div class="chp_left-mobile"
@@ -149,7 +149,7 @@ var customConfigHeader = {};
                         </div>
         
                     </div>
-                    <div class="d-flex chp_justify-content-right">
+                    <div class="d-flex justify-content-right">
                         <div id="right_additional_menu">
                             <div class="chp_dropdown">
                                 <button onclick="customConfigHeader.closeHamburgerMenu()" class="chp_right-buttons img-pos"  id="user-drop">
