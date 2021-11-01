@@ -83,7 +83,7 @@ var customConfigHeader = {};
             `<header id="header-section">
             <div class="chp_container-fluid">
         
-                <div style="display:flex;align-items:center; width:25em">
+                <div style="display:flex;align-items:center; width:27em">
                     <img class="chp_logo" onclick="customConfigHeader.navigation(\'HomePage\')" style="
                   
                   width: 128px;
@@ -100,7 +100,7 @@ var customConfigHeader = {};
 
                   <p id="account-name" style="margin: 0;padding-left:1em; font-weight: bold;font-size:16px;"></p>
                 </div>
-                <div class="d-flex .chp_justify-content-left">
+                <div class="d-flex chp_justify-content-left">
                       
                     <div class="left-mobile">
                         <div class="chp_dropdown chp_showMobile">
