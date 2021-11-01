@@ -102,7 +102,7 @@ var customConfigHeader = {};
                 </div>
                 <div class="d-flex justify-content-left">
                       
-                    <div class="left-mobile"
+                    <div class="left-mobile">
                         <div class="chp_dropdown chp_showMobile">
                             <button style="background-color: transparent;
                             border: 0px;
