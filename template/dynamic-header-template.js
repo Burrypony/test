@@ -81,10 +81,10 @@ var customConfigHeader = {};
     this.setHtml = function () {
         var str =
             `<header id="header-section">
-            <div class="container-fluid">
+            <div class="chp_container-fluid">
         
                 <div style="display:flex;align-items:center; width:45em">
-                    <img class="logo" onclick="customConfigHeader.navigation(\'HomePage\')" style="
+                    <img class="chp_logo" onclick="customConfigHeader.navigation(\'HomePage\')" style="
                   
                   width: 128px;
                   margin-left: 26px;
@@ -100,26 +100,26 @@ var customConfigHeader = {};
 
                   <p id="account-name" style="margin: 0;padding-left:1em; font-weight: bold;font-size:14px;"></p>
                 </div>
-                <div class="d-flex justify-content-left">
+                <div class="chp_d-flex chp_ustify-content-left">
                 
         
-                    <div class="left-mobile">
-                        <div class="dropdown showMobile ">
+                    <div class="chp_left-mob
+                        <div class="chp_dropdown ile">chp_showMobile ">
                             <button style="background-color: transparent;
                             border: 0px;
                             border-radius: 4px;
                             width: 40px;
                             height: 40px;
                             padding-bottom: 4px;"
-                            class="dropdown" type="button" id="dropdownMenuButtonMobile" onclick="customConfigHeader.closeHumanMenu()" data-toggle="dropdown"
+                            class="chp_dropdown" type="button" id="dropdownMenuButtonMobile" onclick="customConfigHeader.closeHumanMenu()" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
                                 <img style="background-color: transparent"
                                     src="https://storage.pepperi.com/General/Icons/open-menu-black.svg" width="20px"
                                     vertical-align="center" alt="user" />
                             </button>
         
-                            <div id="dropdown-menu-mobile" class="dropdown-menu-mobile dropdown-menu-left"
-                                aria-labelledby="dropdownMenuButton">
+                            <div id="dropdown-menu-mobile" class="chp_dropdown-menu-mobile chp_dropdown-menu-left"
+                                aria-labelledby="chp_dropdownMenuButton">
         
                                 <div id="test-drpd" style="color: black;
                                 vertical-align: middle;
@@ -143,29 +143,29 @@ var customConfigHeader = {};
         
                         </div>
         
-                        <div class="btn-group">
-                            <ul id="header_btn_bar" class="showDesktop" style="list-style: none;">
+                        <div class="chp_btn-group">
+                            <ul id="header_btn_bar" class="chp_showDesktop" style="list-style: none;">
                             </ul>
                         </div>
         
                     </div>
-                    <div class="d-flex justify-content-right">
+                    <div class="chp_d-flex chp_justify-content-right">
                         <div id="right_additional_menu">
-                            <div class="dropdown">
-                                <button onclick="customConfigHeader.closeHamburgerMenu()" class="right-buttons img-pos"  id="user-drop">
-                                    <svg class="user-img" xmlns="http://www.w3.org/2000/svg" width="18" height="20"
+                            <div class="chp_dropdown">
+                                <button onclick="customConfigHeader.closeHamburgerMenu()" class="chp_right-buttons img-pos"  id="user-drop">
+                                    <svg class="chp_user-img" xmlns="http://www.w3.org/2000/svg" width="18" height="20"
                                         viewBox="2 3 20 20">
                                         <path fill-opacity="1" fill-rule="evenodd" fill="black"
                                             d="M5.87300934,20 C5.31672677,18.8352719 5,17.5623379 5,16.3333333 C5,13.9259827 6.21522434,12.2548428 8.06569509,11.3364984 C7.70530908,10.3928205 7.5,9.36966701 7.5,8.4 C7.5,5.36243388 9.51471863,4 12,4 C14.4852814,4 16.5,5.36243388 16.5,8.4 C16.5,9.36966701 16.2946909,10.3928205 15.9343049,11.3364984 C17.7847757,12.2548428 19,13.9259827 19,16.3333333 C19,17.5623379 18.6832732,18.8352719 18.1269907,20 C17.7963837,20 17.3817618,20 16.883125,20 C15.7220834,20 15.7220834,19.3712729 15.8841722,19.0335104 C16.2755898,18.2178696 16.5,17.329449 16.5,16.5 C16.5,15.0183086 15.7838916,14.0593118 14.6788931,13.5264125 C13.9304475,14.4190907 13.00359,15 12,15 C10.99641,15 10.0695525,14.4190907 9.32110687,13.5264125 C8.21610842,14.0593118 7.5,15.0183086 7.5,16.5 C7.5,17.3265901 7.72286593,18.211746 8.11178644,19.0250739 C8.2747433,19.3658565 8.2747433,20 7.14578125,20 C6.64072083,20 6.21646352,20 5.87300934,20 Z M12,12.5 C13.1045695,12.5 14,10.2997114 14,8.64285714 C14,6.98600289 13.1045695,6.5 12,6.5 C10.8954305,6.5 10,6.98600289 10,8.64285714 C10,10.2997114 10.8954305,12.5 12,12.5 Z" />
                                     </svg>
                                   
                                 </button>
-                                <div id="myDropdown" class="dropdown-content dropdown-put" style="right:0">
+                                <div id="myDropdown" class="chp_dropdown-content dropdown-put" style="right:0">
                                     <ul>
                                     <li id='userName1'></li>
                                     <hr style="margin-top: 10px; margin-bottom: 10px;">
-                                        <li class="icon-pas"  onclick="customConfigHeader.changePassword()">Change Password</li>
-                                        <li class="icon-log" onclick="customConfigHeader.logout();">Logout</li>
+                                        <li class="chp_icon-pas"  onclick="customConfigHeader.changePassword()">Change Password</li>
+                                        <li class="chp_icon-log" onclick="customConfigHeader.logout();">Logout</li>
                                     </ul>
                                 </div>
                             </div>
@@ -230,7 +230,7 @@ var customConfigHeader = {};
     this.getScreenSize = function () {
         if (window.screen.width = 576) {
 
-            var items = document.getElementsByClassName('dropdown-backdrop');
+            var items = document.getElementsByClassName('chp_dropdown-backdrop');
             for (i = 0; i < items.length; i++) {
                 // items[i].classList.toggle('back');
 
@@ -426,10 +426,10 @@ var customConfigHeader = {};
     }
 
     this.closeHamburgerMenu = function () {
-        document.getElementById("dropdown-menu-mobile").classList.remove('show')
+        document.getElementById("dropdown-menu-mobile").classList.remove('chp_show')
     }
     this.closeHumanMenu = function () {
-        document.getElementById("dropdown-menu-mobile").classList.toggle('show')
+        document.getElementById("dropdown-menu-mobile").classList.toggle('chp_show')
     }
 
 
@@ -453,7 +453,7 @@ var customConfigHeader = {};
 
             } else if (item.actionType === 'dropdown') {
                 if (/Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                    linkElement = `<li class="dropdown_2Mob" onclick="customConfigHeader.openMobDropdown(this)">${item.title}<ul>`
+                    linkElement = `<li class="chp_dropdown_2Mob" onclick="customConfigHeader.openMobDropdown(this)">${item.title}<ul>`
                     dropdownList.forEach(element => {
                         if(element.parentLink == item.title){
                             if (element.actionType === 'navigation') {
@@ -470,9 +470,9 @@ var customConfigHeader = {};
                     })
                     linkElement += `${subMenu}</ul></li>`
                 } else {
-                    linkElement = `<li class="dropdown_1 dropdown-traits">
+                    linkElement = `<li class="chp_dropdown_1 chp_dropdown-traits">
                         <div>${item.title}</div>
-                            <div class="dropdown-content_1 dropdown-put"><ul>`
+                            <div class="chp_dropdown-content_1 chp_dropdown-put"><ul>`
                             dropdownList.forEach(element => {
                                 if (element.parentLink == item.title){
                                     if (element.actionType === 'navigation') {
@@ -516,7 +516,7 @@ var customConfigHeader = {};
 
     customConfigHeader.openMobDropdown = function (data) {
         console.log(data.children[0]);
-        data.children[0].classList.toggle('show')
+        data.children[0].classList.toggle('chp_show')
     }
 
 
