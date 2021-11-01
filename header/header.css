@@ -557,8 +557,8 @@ svg {
 .chp_dropdown-menu-mobile {
     /* position: absolute; */
     position: relative;
-    /* top: 100%; */
-    left: -110px;
+    top: 100%;
+    left: 110px;
     z-index: 1000;
     display: none;
     float: left;
