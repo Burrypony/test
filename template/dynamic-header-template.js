@@ -452,7 +452,7 @@ var customConfigHeader = {};
                 linkElement = `<a onclick="customConfigHeader.openInNewTab('${deepLink}')">${item.title}</a>`;
 
             } else if (item.actionType === 'dropdown') {
-                if (/Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                if (/Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)&& window.innerWidth <=960) {
                     linkElement = `<li class="chp_dropdown_2Mob" onclick="customConfigHeader.openMobDropdown(this)">${item.title}<ul>`
                     dropdownList.forEach(element => {
                         if(element.parentLink == item.title){
