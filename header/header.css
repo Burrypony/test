@@ -57,15 +57,15 @@
     text-decoration: none;
 }
 
-.dropdown:hover .chp_dropdown-content,
-.dropdown_1:hover .chp_dropdown-content_1,
-.dropdown_2:hover .chp_dropdown-content_2,
-.dropdown:active .chp_dropdown-content,
-.dropdown_1:active .chp_dropdown-content_1,
-.dropdown_2:active .chp_dropdown-content_2,
-.dropdown:focus .chp_dropdown-content,
-.dropdown_1:focus .chp_dropdown-content_1,
-.dropdown_2:focus .chp_dropdown-content_2 {
+.chp_dropdown:hover .chp_dropdown-content,
+.chp_dropdown_1:hover .chp_dropdown-content_1,
+.chp_dropdown_2:hover .chp_dropdown-content_2,
+.chp_dropdown:active .chp_dropdown-content,
+.chp_dropdown_1:active .chp_dropdown-content_1,
+.chp_dropdown_2:active .chp_dropdown-content_2,
+.chp_dropdown:focus .chp_dropdown-content,
+.chp_dropdown_1:focus .chp_dropdown-content_1,
+.chp_dropdown_2:focus .chp_dropdown-content_2 {
     display: block !important;
 }
 
