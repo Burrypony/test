@@ -1126,7 +1126,7 @@ var customConfigBody = {};
 
         if (!customConfigBody.getSessionStorage("accountUUID") || customConfigBody.getSessionStorage("accountUUID") == '')
             var name = `${customConfigBody.accounts[0].Name}(${customConfigBody.accounts[0].UUID})`
-            
+
             customConfigBody.setActiveDropdown(customConfigBody.accounts[0].UUID, name)
 
     };
@@ -1135,7 +1135,7 @@ var customConfigBody = {};
         document.getElementById('select-menu').classList.toggle('show');
     }
 
-    customConfigHeader.appendConfigFiles = async function (storage) {
+    customConfigBody.appendConfigFiles = async function (storage) {
         return await new Promise((resolve) => {
             var uploadedFiles = 0;
             var filePaths = [
