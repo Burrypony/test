@@ -9,11 +9,15 @@
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1),
         0px 4px 8px 0px rgba(21, 24, 26, 0.1),
         0px 8px 16px 0px rgba(0, 0, 0, 0.1);
-
+    justify-content: center;
 }
 
 #header_btn_bar {
     display: flex;
+}
+
+.chp_dropdown {
+    position: relative;
 }
 
 #header-section .chp_dropdown-menu:after {
@@ -67,6 +71,14 @@
 .chp_dropdown_1:focus .chp_dropdown-content_1,
 .chp_dropdown_2:focus .chp_dropdown-content_2 {
     display: block !important;
+}
+
+.chp_dropdown_1 .chp_dropdown-content_1{
+    height: max-content !important;
+}
+
+#myDropdown{
+    height: max-content !important;
 }
 
 .chp_dropdown-content ul li:hover,
