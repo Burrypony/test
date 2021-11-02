@@ -1125,7 +1125,8 @@ var customConfigBody = {};
         }
 
         if (!customConfigBody.getSessionStorage("accountUUID") || customConfigBody.getSessionStorage("accountUUID") == '')
-            customConfigBody.setActiveDropdown(customConfigBody.accounts[0].UUID, customConfigBody.accounts[0].Name)
+            let name = `${customConfigBody.accounts[0].Name}(${customConfigBody.accounts[0].UUID})`
+            customConfigBody.setActiveDropdown(customConfigBody.accounts[0].UUID, name)
 
     };
 
@@ -1133,49 +1134,55 @@ var customConfigBody = {};
         document.getElementById('select-menu').classList.toggle('show');
     }
 
-    customConfigBody.appendConfigFiles = async function (storage) {
-
-
-        var jqueryLink = document.createElement("script");
-        jqueryLink.src = "https://code.jquery.com/jquery-3.6.0.min.js"
-        document.getElementsByTagName("head")[0].appendChild(jqueryLink);
-
+    customConfigHeader.appendConfigFiles = async function (storage) {
         return await new Promise((resolve) => {
             var uploadedFiles = 0;
-
             var filePaths = [
-                "dynamicHP/css/style.css"
+                "dynamicHP/header/header.css"
             ];
 
-            var filteredStorage = storage.filter(({
-                Title
-            }) => {
-                return filePaths.includes(Title)
-            })
+            // var filteredStorage = storage.filter(({
+            //     Title
+            // }) => {
+            //     return filePaths.includes(Title)
+            // })
 
-            filteredStorage.forEach(el => {
-                var file = '';
-                if (el["URL"].includes('.js')) {
-                    file = document.createElement("script");
-                    file.src = el["URL"];
-                } else if (el["URL"].includes('.css')) {
-                    file = document.createElement("link");
-                    file.rel = "stylesheet";
-                    file.type = "text/css"
-                    file.href = el["URL"];
+            file = document.createElement("link");
+            file.rel = "stylesheet";
+            file.type = "text/css"
+            file.href = 'https://burrypony.github.io/test/css/style.css';
+
+            document.getElementsByTagName("head")[0].appendChild(file)
+
+            file.onload = function () {
+                uploadedFiles++;
+                if (uploadedFiles == filePaths.length) {
+                    resolve(uploadedFiles)
                 }
-                document.getElementsByTagName("head")[0].appendChild(file);
+            };
 
-                file.onload = function () {
-                    uploadedFiles++;
-                    if (uploadedFiles == filePaths.length) {
-                        resolve(uploadedFiles)
-                    }
-                };
-            })
+            // filteredStorage.forEach(el => {
+            //     var file = '';
+            //     if (el["URL"].includes('.js')) {
+            //         file = document.createElement("script");
+            //         file.src = el["URL"];
+            //     } else if (el["URL"].includes('.css')) {
+            //         file = document.createElement("link");
+            //         file.rel = "stylesheet";
+            //         file.type = "text/css"
+            //         file.href = el["URL"];
+            //     }
+            //     document.getElementsByTagName("head")[0].appendChild(file);
 
+            //     file.onload = function () {
+            //         uploadedFiles++;
+            //         if (uploadedFiles == filePaths.length) {
+            //             resolve(uploadedFiles)
+            //         }
+            //     };
+            // })
         })
-    };
+    }
 
 
 }.apply(customConfigBody));
