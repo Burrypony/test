@@ -1126,6 +1126,7 @@ var customConfigBody = {};
 
         if (!customConfigBody.getSessionStorage("accountUUID") || customConfigBody.getSessionStorage("accountUUID") == '')
             var name = `${customConfigBody.accounts[0].Name}(${customConfigBody.accounts[0].UUID})`
+            
             customConfigBody.setActiveDropdown(customConfigBody.accounts[0].UUID, name)
 
     };
