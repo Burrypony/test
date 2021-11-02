@@ -1125,7 +1125,7 @@ var customConfigBody = {};
         }
 
         if (!customConfigBody.getSessionStorage("accountUUID") || customConfigBody.getSessionStorage("accountUUID") == '')
-            let name = `${customConfigBody.accounts[0].Name}(${customConfigBody.accounts[0].UUID})`
+            var name = `${customConfigBody.accounts[0].Name}(${customConfigBody.accounts[0].UUID})`
             customConfigBody.setActiveDropdown(customConfigBody.accounts[0].UUID, name)
 
     };
